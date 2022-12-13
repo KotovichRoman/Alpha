@@ -26,6 +26,7 @@ public class SearchResultPage extends AbstractPage {
     }
 
     public SearchResultPage filtersButtonClick() {
+        CustomDelay(5);
         WebElement filterButton = new WebDriverWait(driver, Duration.ofSeconds(WAIT_TIME_IN_SECONDS))
                 .until(ExpectedConditions.elementToBeClickable(filterButtonLocator));
         filterButton.click();
@@ -34,6 +35,7 @@ public class SearchResultPage extends AbstractPage {
     }
 
     public SearchResultPage selectBlackColor() {
+        CustomDelay(5);
         WebElement selectBlackColorButton = new WebDriverWait(driver, Duration.ofSeconds(WAIT_TIME_IN_SECONDS))
                 .until(ExpectedConditions.elementToBeClickable(selectBlackColorButtonLocator));
         selectBlackColorButton.click();
@@ -50,6 +52,7 @@ public class SearchResultPage extends AbstractPage {
     }
 
     public SearchResultPage openOrderByDropdownMenu() {
+        CustomDelay(5);
         WebElement orderByButton = new WebDriverWait(driver, Duration.ofSeconds(WAIT_TIME_IN_SECONDS))
                 .until(ExpectedConditions.elementToBeClickable(orderByButtonLocator));
         orderByButton.click();
@@ -58,6 +61,7 @@ public class SearchResultPage extends AbstractPage {
     }
 
     public SearchResultPage selectOrderByMostPopular() {
+        CustomDelay(5);
         WebElement orderByMostPopularElement = new WebDriverWait(driver, Duration.ofSeconds(WAIT_TIME_IN_SECONDS))
                 .until(ExpectedConditions.elementToBeClickable(orderByMostPopularElementLocator));
         orderByMostPopularElement.click();
