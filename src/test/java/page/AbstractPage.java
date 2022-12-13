@@ -7,7 +7,7 @@ import org.openqa.selenium.WebDriver;
 public abstract class AbstractPage {
 
     protected WebDriver driver;
-    protected final static int WAIT_TIME_IN_SECONDS = 30;
+    protected final static int WAIT_TIME_IN_SECONDS = 60;
     protected final Logger logger = LogManager.getRootLogger();
 
     protected AbstractPage(WebDriver driver){
