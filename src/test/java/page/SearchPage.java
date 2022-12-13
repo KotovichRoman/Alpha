@@ -20,6 +20,7 @@ public class SearchPage extends AbstractPage {
     }
 
     public SearchResultPage openSearchResultPage(String text) {
+        CustomDelay(5);
         WebElement searchInput = new WebDriverWait(driver, Duration.ofSeconds(WAIT_TIME_IN_SECONDS))
                 .until(ExpectedConditions.elementToBeClickable(searchInputLocator));
         searchInput.sendKeys(text);
