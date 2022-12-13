@@ -37,7 +37,7 @@ public class HomePage extends AbstractPage {
     }
 
     public SearchPage openSearch() {
-        CustomDelay(5);
+        CustomDelay(15);
         WebElement searchButton = new WebDriverWait(driver, Duration.ofSeconds(WAIT_TIME_IN_SECONDS))
                 .until(ExpectedConditions.elementToBeClickable(searchButtonLocator));
         searchButton.click();
@@ -46,7 +46,7 @@ public class HomePage extends AbstractPage {
     }
     
     public MenPage openMenPage() {
-        CustomDelay(5);
+        CustomDelay(15);
         WebElement menPageButton = new WebDriverWait(driver, Duration.ofSeconds(WAIT_TIME_IN_SECONDS))
                 .until(ExpectedConditions.elementToBeClickable(menPageButtonLocator));
         menPageButton.click();
